@@ -1,0 +1,8 @@
+{
+    "format": "expanded",
+"extensionName": ".css",
+"savePath": "/dev/css",
+"liveSassCompile.settings.autoprefix": [
+
+]
+}
