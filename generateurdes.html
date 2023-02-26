@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lancer de dés</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Lancer de dés</h1>
+    <div>
+        <p id="nbFacesMessage">Choisissez le nombre de faces en cliquant sur une image de dé.</p>
+        <h3>Type de dés</h3>
+        <img src="img/icons/d4.png" alt="d4" onclick="ajouterDes(4)">
+        <img src="img/icons/d6.png" alt="d6" onclick="ajouterDes(6)">
+        <img src="img/icons/d8.png" alt="d8" onclick="ajouterDes(8)">
+        <img src="img/icons/d10.png" alt="d10" onclick="ajouterDes(10)">
+        <img src="img/icons/d12.png" alt="d12" onclick="ajouterDes(12)">
+        <img src="img/icons/d20.png" alt="d20" onclick="ajouterDes(20)">
+    </div>
+    <button onclick="lancerDes()">Lancer les dés</button><br>
+    <button onclick="resetDes()">Reset</button>
+    <p id="nbDes"></p>
+    <p id="resultat"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
