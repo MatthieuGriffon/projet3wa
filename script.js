@@ -50,3 +50,33 @@ resultat.innerHTML = "";
 nbDes.innerHtml ="";
 }
 
+
+
+//CARROUSEl//
+const carouselContainer = document.querySelector('.carousel-container');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+let currentPosition = 0;
+
+// Fonction pour faire défiler le carrousel vers la gauche
+function scrollLeft() {
+  if (currentPosition > 0) {
+    currentPosition--;
+    carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
+  }
+}
+
+// Fonction pour faire défiler le carrousel vers la droite
+function scrollRight() {
+  if (currentPosition < carouselItems.length - 1) {
+    currentPosition++;
+    carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
+  }
+}
+
+// Écouter les clics sur les boutons de navigation
+prevButton.addEventListener('click', scrollLeft);
+nextButton.addEventListener('click', scrollRight);
+
+
