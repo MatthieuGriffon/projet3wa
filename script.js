@@ -52,31 +52,32 @@ nbDes.innerHtml ="";
 
 
 
-//CARROUSEl//
-const carouselContainer = document.querySelector('.carousel-container');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const prevButton = document.querySelector('.carousel-prev');
-const nextButton = document.querySelector('.carousel-next');
-let currentPosition = 0;
+//SLIDE////
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// Fonction pour faire défiler le carrousel vers la gauche
-function scrollLeft() {
-  if (currentPosition > 0) {
-    currentPosition--;
-    carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
-  }
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-// Fonction pour faire défiler le carrousel vers la droite
-function scrollRight() {
-  if (currentPosition < carouselItems.length - 1) {
-    currentPosition++;
-    carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
-  }
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-// Écouter les clics sur les boutons de navigation
-prevButton.addEventListener('click', scrollLeft);
-nextButton.addEventListener('click', scrollRight);
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("custom-slider");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
 
 
