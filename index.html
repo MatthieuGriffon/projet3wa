@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Le site de l'association Dice Therapy qui organise et diffuse des partie de jeux de role.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dice-Therapy</title>
   <link rel="stylesheet" href="css/styles.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="css/dice.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
@@ -43,12 +46,34 @@
 
         <div class="container">
         <section class="agenda">
-          <h>Agenda</h>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aut sunt praesentium nihil exercitationem numquam ipsa, eligendi placeat ex suscipit temporibus porro eveniet fugit modi ab voluptas eos doloremque possimus.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, minus non laboriosam enim architecto perspiciatis cumque harum aliquid dolorum voluptate explicabo asperiores porro? Atque, maiores pariatur. Aliquid aut libero quos.
+          <div class="div-agenda">
+            <h2>Agenda</h2>
+            <img src="img/deco calendar.webp" alt="calendar">
+          </div>
+          <div class="infos">
+            <!-- Dice -->
+            <div class="div_dice">
+              <button class="demo__button" id="dice__btn">Roll the dice</button>
+              <div class="dice__scene">
+                <div id="dice__cube" class="show-front">
+                  <div class="dice__side dice__side--front"></div>
+                  <div class="dice__side dice__side--back"></div>
+                  <div class="dice__side dice__side--right"></div>
+                  <div class="dice__side dice__side--left"></div>
+                  <div class="dice__side dice__side--top"></div>
+                  <div class="dice__side dice__side--bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="info"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis quo sapiente nam illo quaerat rem dolore sit ex repudiandae id nobis praesentium voluptas, culpa molestias optio deserunt veritatis amet?</p></div>
         </section>
-        <section class="agenda">
-          <h>Agenda</h>
+        <section class="agenda">         
+    </div>
+
+    <audio preload="auto" id="dice__audio">
+    	<source src="./assets/sounds/dice-sound.mp3"></source>
+    </audio>
+    <!-- /Dice -->
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aut sunt praesentium nihil exercitationem numquam ipsa, eligendi placeat ex suscipit temporibus porro eveniet fugit modi ab voluptas eos doloremque possimus.
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, minus non laboriosam enim architecto perspiciatis cumque harum aliquid dolorum voluptate explicabo asperiores porro? Atque, maiores pariatur. Aliquid aut libero quos.
         </section>
@@ -63,8 +88,8 @@
       </div>
       </main>
       
-
-    
-  <script src="script.js"></script>
+      <link href="css/dice.min.css" rel="stylesheet" />
+      <script src="js/dice.js"></script>
+      <script src="js/script.js"></script>
 </body>
 </html>
