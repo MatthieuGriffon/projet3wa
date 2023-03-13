@@ -7,44 +7,132 @@
   <title>Dice-Therapy</title>
   <link rel="stylesheet" href="css/styles.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link href="css/dice.min.css" rel="stylesheet" type="text/css" />
+ 
+ <link href="css/dice.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
-      <img class="logo-right" src="/img/logo/logo_transparent.png" alt="logo dice thearapy">     
-      <nav class="nav-header">
-        <ul class="nav-li"><li class="button-74" ><a href="generateurdes.html">Agenda</a></ul>
-        <ul class="nav-li"><li class="button-74" ><a href="generateurdes.html">Outils</a></ul>
-        <ul class="nav-li"><li class="button-74" ><a href="https://example.com">A propos</a></ul>
-        <ul class="nav-li"><li class="button-74" ><a href="https://example.com">Connection</a></ul>
-      </nav>
-      <img class="logo-left" src="/img/dice_tweety.png" alt="dès vingt faces">
+      <div class="header">
+        <div class="img-header">
+          <img class="logo-right" src="/img/logo/logo_transparent.png" alt="logo dice thearapy">
+        </div>
+          <div class="nav-header">   
+              <nav class="nav-header">
+                <ul class="nav-li"><li class="button-74" ><a href="generateurdes.html">Agenda</a></ul>
+                <ul class="nav-li"><li class="button-74" ><a href="generateurdes.html">Outils</a></ul>
+                <ul class="nav-li"><li class="button-74" ><a href="https://example.com">A propos</a></ul>
+                <ul class="nav-li"><li class="button-74" ><a href="https://example.com">Connection</a></ul>
+              </nav>
+          </div> 
+              <div class="logo-left">
+                <img class="logo-left" src="/img/dice_tweety.png" alt="dès vingt faces">
+              </div> 
+        </div>
     </header>   
       <main> 
-        <div class="carrousel">
-          <h2>Nos parties de jeux de rôle.</h2>
-          <div class="slide-container">         
-            <div class="custom-slider fade">
-              <iframe class="slide-vid" width="800" height="300" src="https://www.youtube.com/embed/iJF588NKC5Y?controls=0" title="YouTube video player"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+          <div class="rod"></div>
+          <div id="slider">
+            <div class="dp-wrap">
+              <div id="dp-slider">
+          
+                <div class="dp_item" data-class="1" data-position="1">
+                  <div class="dp-content">
+          
+                    <h2>Cthulhu</h2>
+                    <p>Terreur sur l'orient express</p>
+                    <a href="#" class="site-btn">Read More…</a>
+                  </div>
+                  <div class="dp-img">
+                     <iframe class="img-fluid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iJF588NKC5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+          
+                <div class="dp_item" data-class="2" data-position="2">
+                  <div class="dp-content">
+                    <h2>D&D 5</h2>
+                    <p>Curse of Strahd</p>
+                    <a href="#" class="site-btn">Vampire, vous avez dit vampire?</a>
+                  </div>
+                  <div class="dp-img">
+                    <iframe class="img-fluid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fJFuFaI-OZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+          
+                <div class="dp_item" data-class="3" data-position="3">
+                  <div class="dp-content">
+          
+                    <h2>The Expanse</h2>
+                    <p>Un JDR basé sur la série</p>
+                    <a href="#" class="site-btn">Read More…</a>
+                  </div>
+                  <div class="dp-img">
+                    <iframe class="img-fluid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/E7K5i9KmFTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+          
+                <div class="dp_item" data-class="4" data-position="4">
+                  <div class="dp-content">
+          
+                    <h2>Vampire</h2>
+                    <p>Vampire l'âge des ténèbres...</p>
+                    <a href="#" class="site-btn">Read More…</a>
+                  </div>
+                  <div class="dp-img">
+                    <iframe class="img-fluid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/w2Dr8hduk64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+          
+              <span id="dp-next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.401 51.401">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: gold;
+                        stroke-miterlimit: 10;
+                        stroke-width: 7px;
+                      }
+                    </style>
+                  </defs>
+                  <path id="Rectangle_4_Copy" data-name="Rectangle 4 Copy" class="cls-1" d="M32.246,0V33.178L0,31.953" transform="translate(0.094 25.276) rotate(-45)" />
+                </svg>
+              </span>
+          
+              <span id="dp-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.401 51.401">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: gold;
+                        stroke-miterlimit: 10;
+                        stroke-width: 7px;
+                      }
+                    </style>
+                  </defs>
+                  <path id="Rectangle_4_Copy" data-name="Rectangle 4 Copy" class="cls-1" d="M32.246,0V33.178L0,31.953" transform="translate(0.094 25.276) rotate(-45)" />
+                </svg>
+              </span>
+          
+              <ul id="dp-dots">
+                <li data-class="1" class="active"></li>
+                <li data-class="2"></li>
+                <li data-class="3"></li>
+                <li data-class="4"></li>
+              </ul>
             </div>
-            <div class="custom-slider fade">
-              <iframe class="slide-vid" width="560" height="300" src="https://www.youtube.com/embed/fJFuFaI-OZ8?controls=0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="custom-slider fade">
-              <iframe class="slide-vid" width="560" height="300" src="https://www.youtube.com/embed/WF3mN1_GqhI?controls=0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        <br>
-        <div class="slide-dot">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        </div>
+          </div>
 
-        <div class="container">
+
+
+
+
+
+
+
+          <div class="container">
         <section class="agenda">
           <div class="div-agenda">
             <h2>Agenda</h2>
